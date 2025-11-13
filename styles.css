@@ -1,0 +1,147 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header & Nav */
+header {
+    background: #1e90ff;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.cta-button {
+    background: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background: #ff4500;
+}
+
+/* Sections */
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h3 {
+    color: #1e90ff;
+    margin-bottom: 1rem;
+}
+
+/* How it Works */
+.how-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.how-group {
+    flex: 1;
+    min-width: 280px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.step {
+    margin-bottom: 1rem;
+}
+
+/* Driver Benefits */
+.driver-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.benefit {
+    flex: 1;
+    min-width: 250px;
+    background: #e6f7ff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    background: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .how-container, .driver-benefits {
+        flex-direction: column;
+    }
+}
